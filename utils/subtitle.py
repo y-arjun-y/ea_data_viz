@@ -64,6 +64,8 @@ data_source_details = {
 
 def get_data_source(data_sources):
 
+    download_img_url = '/assets/download.svg'
+
     if len(data_sources) == 0:
         return html.Div()
 
@@ -87,14 +89,15 @@ def get_data_source(data_sources):
 
         # download link
         if 'download_url' in details:
-            content.append(' (')
             content.append(
                 html.A(
-                    'download',
-                    href = details['download_url'],
+                    html.Img(
+                        src=download_img_url,
+                        className='icon-download'
+                    ),
+                    href=details['download_url']
                 )
             )
-            content.append(')')
 
         content.append(', ')
 
