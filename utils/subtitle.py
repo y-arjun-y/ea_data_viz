@@ -27,17 +27,20 @@ data_source_details = {
 
     'funds_payout': dict(
         name='funds.effectivealtruism.org',
-        url='https://funds.effectivealtruism.org/'
+        url='https://funds.effectivealtruism.org/',
+        download_url='/assets/data/ea_funds_grants.csv',
     ),
 
     'founders_pledge': dict(
         name='founderspledge.com',
-        url='https://founderspledge.com/'
+        url='https://founderspledge.com/',
+        download_url='/assets/data/misc.csv'
     ),
 
     'gwwc': dict(
         name='givingwhatwecan.org',
-        url='https://www.givingwhatwecan.org/'
+        url='https://www.givingwhatwecan.org/',
+        download_url="/assets/data/misc.csv"
     ),
 
     'growth': dict(
@@ -101,10 +104,10 @@ def get_data_source(data_sources):
 
         content.append(', ')
 
-    # Change the last comma into a period.
-    content[-1] = '.'
+    # Remove the last comma.
+    content[-1] = ''
 
-    return html.P(content)
+    return html.P(content, className="download_subtitle")
 
 def get_instructions(zoom=False, hover='bars', extra_text=[]):
 
