@@ -53,7 +53,7 @@ app.layout = html.Div(
                     visdcc.Run_js(id='javascript-body'),
                 ],
                 className = 'body',
-                id = "sidebar-visdcc",
+                id="sidebar-visdcc",
             )
         ],
     )
@@ -63,7 +63,7 @@ app.layout = html.Div(
     [Input('sidebar-visdcc', 'n_clicks')])
 def sidebar(x):
     if x: 
-        return "document.getElementById('sidebar').setAttribute('onclick', 'mobileSidebar()')"
+        return "document.getElementById('sidebar').setAttribute('onclick', 'mobileSidebar()'); var elements = document.getElementsByClassName('download-subtitle-visdcc'); for (var i = 0; i < elements.length; i++) { elements[i].setAttribute('download', ''); }"
     return ""
 
 @app.callback(
@@ -73,6 +73,7 @@ def sidebar(x):
     if x: 
         return "document.getElementById('sidebar').setAttribute('onclick', 'mobileSidebar()')"
     return ""
+
 
 # app.layout = serve_layout
 

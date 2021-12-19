@@ -51,19 +51,23 @@ data_source_details = {
     'gwwc_pledges': dict(
         name='dashboard.effectivealtruism.org',
         url='http://dashboard.effectivealtruism.org/public/question/a8499095-be16-46fe-af1f-e3e56ee04e88',
+        custom_class_gwwc="gwwc-subtitle"
     ),
 
     'gwwc_donations': dict(
         name='dashboard.effectivealtruism.org',
         url='http://dashboard.effectivealtruism.org/public/question/9906735e-1350-4353-9828-bb3ec16137e3',
+        custom_class_gwwc="gwwc-subtitle"
     ),
 
     'gwwc_orgs': dict(
         name='dashboard.effectivealtruism.org',
         url='http://dashboard.effectivealtruism.org/public/question/b3887098-686a-491c-9f9c-9a5b0e2b7fd8',
+        custom_class_gwwc="gwwc-subtitle"
     ),
 
 }
+
 
 def get_data_source(data_sources):
 
@@ -98,7 +102,8 @@ def get_data_source(data_sources):
                         src=download_img_url,
                         className='icon-download'
                     ),
-                    href=details['download_url']
+                    href=details['download_url'],
+                    className="download-subtitle-visdcc"
                 )
             )
 
@@ -107,7 +112,13 @@ def get_data_source(data_sources):
     # Remove the last comma.
     content[-1] = ''
 
-    return html.P(content, className="download_subtitle")
+    for data_sources in data_source:
+        details = data_source_details[data_source]
+
+        if 'custom_class_gwwc' in details:
+            return html.P(content, className="download_subtitle gwwc-subtitle")
+        else:
+            return html.P(content, className="download_subtitle")
 
 def get_instructions(zoom=False, hover='bars', extra_text=[]):
 

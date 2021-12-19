@@ -342,7 +342,7 @@ p, h1, h2, h3, h4 {
 @media only screen and (max-width: 1000px) {
     #gwwc-pledge-section, #gwwc-donations-section, #gwwc-orgs-section {
         min-height: 100%;
-        margin-bottom: 12.5em;
+        margin-bottom: 15em;
     }
 }
 
@@ -362,6 +362,11 @@ p, h1, h2, h3, h4 {
     margin-left: 0.2em;
     height: 1.5em;
     width: 1.5em;
+}
+
+.gwwc-subtitle {
+    position: relative;
+    top: 13em;
 }
 
 /*------------------
