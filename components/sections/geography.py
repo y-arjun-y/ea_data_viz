@@ -99,7 +99,7 @@ density_map = px.choropleth(
     hover_name="Country",
     locationmode='country names',
     color='log density',
-    title="EAs Per Capita (Darker/Greener is Higher)",
+    title="EAs Per Capita (Darker/Bluer is Higher)",
     color_continuous_scale=["#dfe3ee", "#007a8f"],
     hover_data = {
         'circle size': False,

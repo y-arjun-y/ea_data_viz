@@ -5,7 +5,8 @@ data_source_details = {
 
     'rethink19': dict(
         name='EA Survey 2019',
-        url='https://www.rethinkpriorities.org/blog/2019/12/5/ea-survey-2019-series-community-demographics-amp-characteristics'
+        url='https://www.rethinkpriorities.org/blog/2019/12/5/ea-survey-2019-series-community-demographics-amp-characteristics',
+        download_url="/assets/data/rp_survey_2019.xlsx"
     ),
 
     'rethink19-geo': dict(
@@ -17,6 +18,7 @@ data_source_details = {
     'ea_forum': dict(
         name='forum.effectivealtruism.org',
         url='https://forum.effectivealtruism.org/graphiql',
+        download_url="/assets/data/ea_forum.json"
     ),
 
     'open_phil': dict(
@@ -51,18 +53,21 @@ data_source_details = {
     'gwwc_pledges': dict(
         name='dashboard.effectivealtruism.org',
         url='http://dashboard.effectivealtruism.org/public/question/a8499095-be16-46fe-af1f-e3e56ee04e88',
+        download_url="/assets/data/misc.csv",
         custom_class_gwwc="gwwc-subtitle"
     ),
 
     'gwwc_donations': dict(
         name='dashboard.effectivealtruism.org',
         url='http://dashboard.effectivealtruism.org/public/question/9906735e-1350-4353-9828-bb3ec16137e3',
+        download_url="/assets/data/misc.csv",
         custom_class_gwwc="gwwc-subtitle"
     ),
 
     'gwwc_orgs': dict(
         name='dashboard.effectivealtruism.org',
         url='http://dashboard.effectivealtruism.org/public/question/b3887098-686a-491c-9f9c-9a5b0e2b7fd8',
+        download_url="/assets/data/misc.csv",
         custom_class_gwwc="gwwc-subtitle"
     ),
 

@@ -364,9 +364,11 @@ p, h1, h2, h3, h4 {
     width: 1.5em;
 }
 
-.gwwc-subtitle {
-    position: relative;
-    top: 13em;
+@media (max-width: 1000px) {
+    .gwwc-subtitle {
+        position: relative;
+        top: 13em;
+    }
 }
 
 /*------------------
