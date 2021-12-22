@@ -15,23 +15,23 @@ from utils.get_data.refresh_data import refresh_data
 from dash.dependencies import Input, Output, State
 import visdcc
 
+metas = [
+    {'property': "twitter:card", 'content': "summary_large_image"},
+    {'property': 'og:title', 'content': 'Effective Altruism Data'},
+    {'property': "og:description", 'content': "Aggregating and visualizing data from EA organisations, including grants, donors, and pledges."},
+    {'property': "og:url", 'content': "https://effectivealtruismdata.com"},
+    {'property': "og:site_name", 'content': "Effective Altruism Data"},
+    {'property': "og:image", 'content':  "https://lh3.google.com/u/0/d/1cq6qE2TNpPYAWJeBuj-k79ddZAwpE_uS=w2880-h1528-iv1",},
+    {'property': "og:image:width", 'content': "1440"},
+    {'property': "og:image:height", 'content': "630"},
+]
+
 app = dash.Dash(
-    __name__,
-    meta_tags = [
-        {
-            'og:title': 'Effective Altruism Data',
-            "og:url": "https://effectivealtruismdata.com",
-            "og:site_name": "Effective Altruism Data",
-            "og:image": "https://i.ibb.co/mqbpdXW/eadata.png",
-            "og:image:width": "1440",
-            "og:image:height": "630",
-            "twitter:card": "summary_large_image",
-            'name': 'viewport',
-            'content': 'width=device-width, initial-scale=1.0',
-        }
-    ],
+    __name__
 )
+
 app.title = 'Effective Altruism Data'
+
 server = app.server
 
 # refresh_data()
