@@ -113,7 +113,7 @@ def grants_scatter(op_grants):
         # size='Amount',
         hover = 'hover',
         log_y = True,
-        title = 'Individual Grants (log)',
+        title = 'Individual Grants',
         y_title = 'Amount (USD)',
         x_title = '',
     )
