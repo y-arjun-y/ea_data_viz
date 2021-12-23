@@ -21,7 +21,7 @@ metas = [
     {'property': "og:description", 'content': "Aggregating and visualizing data from EA organisations, including grants, donors, and pledges."},
     {'property': "og:url", 'content': "https://effectivealtruismdata.com"},
     {'property': "og:site_name", 'content': "Effective Altruism Data"},
-    {'property': "og:image", 'content':  "https://lh3.google.com/u/0/d/11JT-GyOxx00mCiZb4uu2dl0EEuqc6OJ1=w2880-h1528-iv1",},
+    {'property': "og:image", 'content':  "https://rawcdn.githack.com/y-arjun-y/ea_data_viz/c4b92d4dd914d4c168d65f3f19538e859ebce949/eadata-twittercard.png",},
     {'property': "og:image:width", 'content': "800"},
     {'property': "og:image:height", 'content': "418"},
     {'name': "viewport", 'content': "width=device-width, initial-scale=1.0"}
