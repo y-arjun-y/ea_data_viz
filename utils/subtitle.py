@@ -71,6 +71,12 @@ data_source_details = {
         custom_class_gwwc="gwwc-subtitle"
     ),
 
+    'x-risks': dict(
+        name="The Precipice by Toby Ord",
+        url="https://res.cloudinary.com/dwbqmbkdb/image/upload/v1586225593/Table_6.1_td3bzd.png",
+        download_url="https://res.cloudinary.com/dwbqmbkdb/image/upload/v1586225593/Table_6.1_td3bzd.png"
+    )
+
 }
 
 

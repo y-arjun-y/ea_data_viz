@@ -24,6 +24,8 @@ from components.sections.open_phil import openphil_grants_scatter_section
 from components.sections.open_phil import openphil_grants_categories_section
 from components.sections.open_phil import openphil_line_plot_section
 
+from components.sections.x_risks import x_risks_section
+
 def body():
     return html.Div(
         [
@@ -51,6 +53,7 @@ def body():
             forum_post_wilkinson_section(),
             forum_user_wilkinson_section(),
 
+            x_risks_section()
         ],
         className = 'content scroll-snapper',
     )

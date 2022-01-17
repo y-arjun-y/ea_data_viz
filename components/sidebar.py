@@ -164,6 +164,23 @@ def gwwc_contents():
         ),
     ]
 
+def longtermism_contents():
+    return [
+        html.P(
+            'Longtermism',
+        ),
+        html.Ul(
+            [
+                html.Li(
+                    html.A(
+                        "Probability of X-Risks",
+                        href="#x-risks",
+                    ),
+                ),
+            ],
+        ),
+    ]
+
 def contents():
     return html.Div(
         [
@@ -173,6 +190,7 @@ def contents():
             *gwwc_contents(),
             *survey_contents(),
             *forum_contents(),
+            *longtermism_contents()
         ],
         className = 'section_list',
     )
