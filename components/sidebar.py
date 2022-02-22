@@ -20,6 +20,12 @@ def intro_contents():
                         href="#donations-sankey"
                     ),
                 ),
+                html.Li(
+                    html.A(
+                        "Key EA Numbers",
+                        href="#key-ea-numbers"
+                    ),
+                ),
             ]
         )
     ]

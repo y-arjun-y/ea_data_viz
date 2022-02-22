@@ -88,6 +88,12 @@ data_source_details = {
     #     download_url="/assets/data/impact/cost_per_life_treatment.csv"
     # )
 
+    'key-ea-numbers': dict(
+        name="Key EA Numbers",
+        url="https://github.com/benthamite/EA-numbers",
+        download_url="https://raw.githubusercontent.com/benthamite/EA-numbers/main/EA-numbers.json"
+    )
+
 }
 
 

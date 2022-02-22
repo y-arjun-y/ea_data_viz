@@ -7,6 +7,7 @@ from components.sections.forum import forum_post_wilkinson_section
 from components.sections.forum import forum_user_wilkinson_section
 
 from components.sections.donations_sankey import donations_sankey_section
+from components.sections.key_ea_numbers import key_ea_numbers
 
 from components.sections.demographics import demographics_section
 from components.sections.demographics import beliefs_section
@@ -17,7 +18,7 @@ from components.sections.gwwc_donation_growth import get_gwwc_donation_growth_se
 from components.sections.gwwc_pledges import get_gwwc_pledges_section
 from components.sections.gwwc_donation_orgs import get_gwwc_donations_orgs_section
 
-from components.sections.tlycs_cost import tlycs_cost
+# from components.sections.tlycs_cost import tlycs_cost
 
 from components.sections.geography import country_total_section
 from components.sections.geography import country_per_capita_section
@@ -36,6 +37,7 @@ def body():
         [
 
             donations_sankey_section(),
+            key_ea_numbers(),
 
             openphil_grants_scatter_section(),
             openphil_grants_categories_section(),
@@ -45,7 +47,6 @@ def body():
             get_gwwc_donation_growth_section(),
             get_gwwc_donations_orgs_section(),
 
-            # tlycs_cost(),
 
             country_total_section(),
             country_per_capita_section(),
