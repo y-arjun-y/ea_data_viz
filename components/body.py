@@ -17,6 +17,8 @@ from components.sections.gwwc_donation_growth import get_gwwc_donation_growth_se
 from components.sections.gwwc_pledges import get_gwwc_pledges_section
 from components.sections.gwwc_donation_orgs import get_gwwc_donations_orgs_section
 
+from components.sections.tlycs_cost import tlycs_cost
+
 from components.sections.geography import country_total_section
 from components.sections.geography import country_per_capita_section
 
@@ -24,7 +26,10 @@ from components.sections.open_phil import openphil_grants_scatter_section
 from components.sections.open_phil import openphil_grants_categories_section
 from components.sections.open_phil import openphil_line_plot_section
 
+# from components.sections.population import population_section
+# from components.sections.timeline import timeline_section
 from components.sections.x_risks import x_risks_section
+
 
 def body():
     return html.Div(
@@ -40,6 +45,8 @@ def body():
             get_gwwc_donation_growth_section(),
             get_gwwc_donations_orgs_section(),
 
+            # tlycs_cost(),
+
             country_total_section(),
             country_per_capita_section(),
 
@@ -53,6 +60,8 @@ def body():
             forum_post_wilkinson_section(),
             forum_user_wilkinson_section(),
 
+            # population_section(),
+            # timeline_section(),
             x_risks_section()
         ],
         className = 'content scroll-snapper',

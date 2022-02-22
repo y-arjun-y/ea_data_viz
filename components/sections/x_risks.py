@@ -4,7 +4,7 @@ import dash_dangerously_set_inner_html
 import pandas as pd
 from utils.subtitle import get_data_source
 
-df = pd.read_csv("./assets/data/x-risks.csv")
+df = pd.read_csv("./assets/data/longtermism/x-risks.csv")
 
 def x_risks_section():
     return html.Div(

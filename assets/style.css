@@ -360,6 +360,14 @@ p, h1, h2, h3, h4 {
     margin-right: 3em;
 }
 
+
+#factoid-div {
+    display: flex;
+    text-align: center;
+    padding: 1rem;
+    gap: 6.8em;
+}
+
 @media only screen and (max-width: 1000px) {
     #gwwc-pledge-section, #gwwc-donations-section, #gwwc-orgs-section {
         min-height: 100%;
@@ -373,6 +381,11 @@ p, h1, h2, h3, h4 {
 
     .baseball {
         margin-right: 0;
+    }
+
+    #factoid-div {
+        flex-direction: column;
+        gap: 3.8em;
     }
     
 }

@@ -164,13 +164,42 @@ def gwwc_contents():
         ),
     ]
 
+# def tlycs_cost():
+#     return [
+#         html.P(
+#             'The Life You Can Save',
+#         ),
+#         html.Ul(
+#             [  
+#                 html.Li(
+#                     html.A(
+#                         "Cost per Life",
+#                         href="#tlycs-cost",
+#                     ),
+#                 ),
+#             ],
+#         ),
+# ]
+
 def longtermism_contents():
     return [
         html.P(
             'Longtermism',
         ),
         html.Ul(
-            [
+            [  
+                # html.Li(
+                #     html.A(
+                #         "Population",
+                #         href="#population",
+                #     ),
+                # ),
+                # html.Li(
+                #     html.A(
+                #         "Timeline",
+                #         href="#timeline",
+                #     ),
+                # ),
                 html.Li(
                     html.A(
                         "Probability of X-Risks",
@@ -188,6 +217,7 @@ def contents():
             *intro_contents(),
             *open_phil_contents(),
             *gwwc_contents(),
+            # *tlycs_cost(),
             *survey_contents(),
             *forum_contents(),
             *longtermism_contents()
