@@ -99,7 +99,7 @@ app.clientside_callback(
             } else if (value["row"] == 2) {
                 document.getElementById("x-risks-img").src = "/assets/x-risks-imgs/baseball-solid.svg";
                 document.getElementById("x-risks-img").setAttribute("class", "baseball");
-                document.getElementById("x-risks-output").innerHTML = "<h1>1 in 1,000,000,000</h1><p>is approximately the odds of catching two foul-bowls in a baseball game in a row.</p>"
+                document.getElementById("x-risks-output").innerHTML = "<h1>1 in 1,000,000,000</h1><p>is approximately the odds of catching two foul-balls in a baseball game in a row.</p>"
             } else if (value["row"] == 4 || value["row"] == 5 || value["row"] == 6) {
                 document.getElementById("x-risks-img").src = "/assets/x-risks-imgs/cake-candles-solid.svg";
                 document.getElementById("x-risks-output").innerHTML = "<h1>1 in 1,000</h1><p>is approximately the odds of being born on February 29th.</p>"
