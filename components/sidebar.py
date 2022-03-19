@@ -7,33 +7,29 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import plotly.express as px
 
+
 def intro_contents():
     return [
         html.P(
-            'Overview',
+            "Overview",
         ),
         html.Ul(
             [
                 html.Li(
-                    html.A(
-                        "All Donations",
-                        href="#donations-sankey"
-                    ),
+                    html.A("Donations Overview", href="#donations-sankey"),
                 ),
                 html.Li(
-                    html.A(
-                        "Key EA Numbers",
-                        href="#key-ea-numbers"
-                    ),
+                    html.A("Key EA Numbers", href="#key-ea-numbers"),
                 ),
             ]
-        )
+        ),
     ]
+
 
 def open_phil_contents():
     return [
         html.P(
-            'Open Philanthropy Grants',
+            "Open Philanthropy Grants",
         ),
         html.Ul(
             [
@@ -56,95 +52,68 @@ def open_phil_contents():
                     ),
                 ),
             ]
-        )
+        ),
     ]
+
 
 def survey_contents():
     return [
         html.P(
-            'EA Survey Results',
+            "EA Survey Results",
         ),
         html.Ul(
             [
                 html.Li(
-                    html.A(
-                        "Countries (total)",
-                        href="#countries"
-                    ),
+                    html.A("Countries (total)", href="#countries"),
                 ),
                 html.Li(
-                    html.A(
-                        "Countries (per Capita)",
-                        href="#countries-per-capita"
-                    ),
+                    html.A("Countries (per Capita)", href="#countries-per-capita"),
                 ),
                 html.Li(
-                    html.A(
-                        "Demographics",
-                        href="#demographics"
-                    ),
+                    html.A("Demographics", href="#demographics"),
                 ),
                 html.Li(
-                    html.A(
-                        "Beliefs and Lifestyle",
-                        href="#beliefs-lifestyle"
-                    ),
+                    html.A("Beliefs and Lifestyle", href="#beliefs-lifestyle"),
                 ),
                 html.Li(
-                    html.A(
-                        "Education",
-                        href="#education"
-                    ),
+                    html.A("Education", href="#education"),
                 ),
                 html.Li(
-                    html.A(
-                        "Careers",
-                        href="#careers"
-                    ),
+                    html.A("Careers", href="#careers"),
                 ),
             ],
         ),
     ]
+
 
 def forum_contents():
     return [
         html.P(
-            'EA Forum',
+            "EA Forum",
         ),
         html.Ul(
             [
                 html.Li(
-                    html.A(
-                        "Posted Date vs Karma",
-                        href="#forum-scatter-section"
-                    ),
+                    html.A("Posted Date vs Karma", href="#forum-scatter-section"),
                 ),
                 html.Li(
-                    html.A(
-                        "Forum Growth",
-                        href="#forum-growth-section"
-                    ),
+                    html.A("Forum Growth", href="#forum-growth-section"),
                 ),
                 html.Li(
-                    html.A(
-                        "Post Distributions",
-                        href="#post-wilkinson-section"
-                    ),
+                    html.A("Post Distributions", href="#post-wilkinson-section"),
                 ),
                 html.Li(
-                    html.A(
-                        "Author Distributions",
-                        href="#author-wilkinson-section"
-                    ),
+                    html.A("Author Distributions", href="#author-wilkinson-section"),
                 ),
             ],
         ),
     ]
 
+
 def gwwc_contents():
     return [
         html.P(
-            'Giving What We Can',
+            "Giving What We Can",
         ),
         html.Ul(
             [
@@ -170,42 +139,14 @@ def gwwc_contents():
         ),
     ]
 
-# def tlycs_cost():
-#     return [
-#         html.P(
-#             'The Life You Can Save',
-#         ),
-#         html.Ul(
-#             [  
-#                 html.Li(
-#                     html.A(
-#                         "Cost per Life",
-#                         href="#tlycs-cost",
-#                     ),
-#                 ),
-#             ],
-#         ),
-# ]
 
 def longtermism_contents():
     return [
         html.P(
-            'Longtermism',
+            "Longtermism",
         ),
         html.Ul(
-            [  
-                # html.Li(
-                #     html.A(
-                #         "Population",
-                #         href="#population",
-                #     ),
-                # ),
-                # html.Li(
-                #     html.A(
-                #         "Timeline",
-                #         href="#timeline",
-                #     ),
-                # ),
+            [
                 html.Li(
                     html.A(
                         "Probability of X-Risks",
@@ -216,30 +157,31 @@ def longtermism_contents():
         ),
     ]
 
+
 def contents():
     return html.Div(
         [
-            html.H2('Contents'),
+            html.H2("Contents"),
             *intro_contents(),
             *open_phil_contents(),
             *gwwc_contents(),
-            # *tlycs_cost(),
             *survey_contents(),
             *forum_contents(),
-            *longtermism_contents()
+            *longtermism_contents(),
         ],
-        className = 'section_list',
+        className="section_list",
     )
+
 
 def sidebar():
     return html.Div(
         [
             html.Div(
                 contents(),
-                id='sidebar',
+                id="sidebar",
             ),
             html.Div(
-                id='sidebar-buttress',
+                id="sidebar-buttress",
             ),
         ]
     )

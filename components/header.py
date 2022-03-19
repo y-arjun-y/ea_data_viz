@@ -4,91 +4,94 @@ import dash
 from dash import dcc
 from dash import html
 import dash_dangerously_set_inner_html
-import visdcc
+
 
 def header():
 
-    lightbulb_img_url = '/assets/logo.png'
-    hamburger_img_url = '/assets/hamburger-menu.svg'
+    lightbulb_img_url = "/assets/images/ea-data/logo.png"
+    # hamburger_img_url = "/assets/images/ui-images/hamburger-menu.svg"
 
     return html.Div(
         [
-            #html.Img(
+            # html.Img(
             #    src = hamburger_img_url,
             #    className='hamburger',
-            #),
+            # ),
             html.Div(
-                dash_dangerously_set_inner_html.DangerouslySetInnerHTML('''
+                dash_dangerously_set_inner_html.DangerouslySetInnerHTML(
+                    """
                     <img
-                        src='/assets/hamburger-menu-2.svg'
+                        src='/assets/images/ui-images/hamburger-menu-2.svg'
                         onclick='toggleSidebarVisible()'
                         class='clickable-icon icon'
                         title='Show or hide contents'
                     >
-                '''),
-                className='icon',
+                """
+                ),
+                className="icon",
             ),
             html.Img(
-                src = lightbulb_img_url,
-                className='icon',
+                src=lightbulb_img_url,
+                className="icon",
             ),
             html.H1(
                 [
                     html.Span(
-                        'EA Data',
-                        className = 'data',
+                        "EA Data",
+                        className="data",
                     ),
                 ],
-                className='main-title short-title',
+                className="main-title short-title",
             ),
             html.H1(
                 [
                     html.Span(
-                        'Effective ',
-                        className = 'effective',
+                        "Effective ",
+                        className="effective",
                     ),
                     html.Span(
-                        'Altruism ',
-                        className = 'altruism',
+                        "Altruism ",
+                        className="altruism",
                     ),
                     html.Span(
-                        'Data',
-                        className = 'data',
+                        "Data",
+                        className="data",
                     ),
                 ],
-                className = 'main-title long-title',
+                className="main-title long-title",
             ),
             html.Div(
                 [
                     html.Div(
-                        dash_dangerously_set_inner_html.DangerouslySetInnerHTML('''
+                        dash_dangerously_set_inner_html.DangerouslySetInnerHTML(
+                            """
                             <img
-                                src="/assets/sun.svg"
+                                src="/assets/images/ui-images/sun.svg"
                                 onclick='toggleDarkMode()'
                                 class='clickable-icon icon'
                                 title="Change appearance"
                                 id='darkmode-button'
                             >
-                        '''),
-                        className='icon',
+                        """
+                        ),
+                        className="icon",
                     ),
-                    visdcc.Run_js(id='javascript-header'),
                     html.Div(
-                        dash_dangerously_set_inner_html.DangerouslySetInnerHTML('''
+                        dash_dangerously_set_inner_html.DangerouslySetInnerHTML(
+                            """
                             <img
-                                src='/assets/question-mark.svg'
+                                src='/assets/images/ui-images/question-mark.svg'
                                 onclick='toggleAboutVisibility()'
                                 class='clickable-icon icon'
                                 title='About'
                             >
-                        '''),
-                        className='icon',
+                        """
+                        ),
+                        className="icon",
                     ),
                 ],
-                className = 'right-icons',
-            )
-
+                className="right-icons",
+            ),
         ],
-        className='header center',
-        id="header-sidebar-visdcc"
+        className="header center",
     )
