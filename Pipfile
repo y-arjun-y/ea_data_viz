@@ -11,6 +11,7 @@ countryinfo = "*"
 bs4 = "*"
 requests = "*"
 dash-dangerously-set-inner-html = "*"
+dash_defer_js_import = "*"
 
 [dev-packages]
 
