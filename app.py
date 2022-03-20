@@ -34,9 +34,6 @@ metas = [
     {"name": "viewport", "content": "width=device-width, initial-scale=1.0"},
 ]
 
-mathjax_script = dji.Import(
-    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
-)
 main_script = dji.Import(src="../assets/main.js")
 
 app = dash.Dash(
@@ -54,7 +51,6 @@ server = app.server
 #     return html.Div(
 app.layout = html.Div(
     [
-        mathjax_script,
         main_script,
         header(),
         html.Div(
