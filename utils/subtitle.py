@@ -64,15 +64,6 @@ data_source_details = {
         url="https://res.cloudinary.com/dwbqmbkdb/image/upload/v1586225593/Table_6.1_td3bzd.png",
         download_url="https://res.cloudinary.com/dwbqmbkdb/image/upload/v1586225593/Table_6.1_td3bzd.png",
     ),
-    # 'timeline': dict(
-    #     name="What we owe the future - William MacAskill",
-    #     url="https://forum.effectivealtruism.org/posts/AoHgbYvTjHnQw8kWX/what-we-owe-the-future-will-macaskill#Civilisational_collapse_"
-    # )
-    # 'tlycs-cost': dict(
-    #     name="The Life You Can Save - Impact Calculator",
-    #     url="https://www.thelifeyoucansave.org/impact-calculator/",
-    #     download_url="/assets/data/impact/cost_per_life_treatment.csv"
-    # )
     "key-ea-numbers": dict(
         name="Key EA Numbers",
         url="https://github.com/benthamite/EA-numbers",
