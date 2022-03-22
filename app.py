@@ -91,7 +91,7 @@ app.clientside_callback(
                 document.getElementById("x-risks-output").innerHTML = "<h1>1 in 30</h1><p>is approximately the odds of getting snake-eyes (rolling two ones) on two die.</p>"
             } else if (value["row"] == 9) {
                 document.getElementById("x-risks-img").src = "/assets/images/x-risks-imgs/phone-solid.svg";
-                document.getElementById("x-risks-output").innerHTML = "<h1>1 in 10</h1><p>is the odds of getting the first digit of a phone number correctly.</p>"
+                document.getElementById("x-risks-output").innerHTML = "<h1>1 in 10</h1><p>is the odds of guessing the first digit of a phone number correctly.</p>"
             } else if (value["row"] == 11) {
                 document.getElementById("x-risks-img").src = "/assets/images/x-risks-imgs/mask-face-solid.svg";
                 document.getElementById("x-risks-output").innerHTML = "<h1>1 in 50</h1><p>is approximately the odds of guessing a person had COVID-19 in England in Oct 2021.</p>"
@@ -108,4 +108,5 @@ app.clientside_callback(
 # app.layout = serve_layout
 
 if __name__ == "__main__":
-    app.run_server(debug=False)
+    # app.run_server(debug=False)
+    app.run_server(debug=True)
