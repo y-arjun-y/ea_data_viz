@@ -1,13 +1,29 @@
+// Sidebar and about visibility
+
 function toggleSidebarVisible() {
   const sidebar = document.getElementById("sidebar");
   const buttress = document.getElementById("sidebar-buttress");
 
-  if (sidebar.classList.contains("toggled")) {
-    sidebar.classList.remove("toggled");
-    buttress.classList.remove("toggled");
+  if (!window.matchMedia("(max-width: 800px)").matches) {
+    if (sidebar.classList.contains("toggled")) {
+      sidebar.classList.remove("toggled");
+      buttress.classList.remove("toggled");
+      sidebar.classList.remove("toggled-mobile");
+      buttress.classList.remove("toggled-mobile");
+    } else {
+      sidebar.classList.add("toggled");
+      buttress.classList.add("toggled");
+      sidebar.classList.remove("toggled-mobile");
+      buttress.classList.remove("toggled-mobile");
+    }
   } else {
-    sidebar.classList.add("toggled");
-    buttress.classList.add("toggled");
+    if (sidebar.classList.contains("toggled-mobile")) {
+      sidebar.classList.remove("toggled-mobile");
+      buttress.classList.remove("toggled-mobile");
+    } else {
+      sidebar.classList.add("toggled-mobile");
+      buttress.classList.add("toggled-mobile");
+    }
   }
 }
 
@@ -21,13 +37,13 @@ function toggleAboutVisibility() {
   }
 }
 
-if (window.matchMedia("(max-media: 700px)").matches) {
+if (window.matchMedia("(max-media: 800px)").matches) {
   function mobileSidebar() {
     toggleSidebarVisible();
   }
 }
 
-// NIGHT MODE AND DAY MODE
+// Dark mode and light mode
 
 function setDarkMode() {
   document.body.classList.add("darkmode");
@@ -64,7 +80,7 @@ window.matchMedia("(prefers-color-scheme: dark)").addListener(function (e) {
   else setLightMode();
 });
 
-document.getElementById("sidebar").setAttribute("onclick", "mobileSidebar()");
+// Key EA numbers
 
 document.querySelectorAll("#card-div div .question").forEach((card) => {
   card.addEventListener("click", () => {
@@ -85,3 +101,5 @@ document.querySelectorAll("#card-div div .question").forEach((card) => {
     }
   });
 });
+
+document.getElementById("sidebar").setAttribute("onclick", "mobileSidebar()");

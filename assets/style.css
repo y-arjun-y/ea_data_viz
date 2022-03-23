@@ -248,11 +248,11 @@ h4 {
     display: none;
   }
 
-  #sidebar.toggled {
+  #sidebar.toggled-mobile {
     transform: translate(0%);
   }
 
-  #sidebar-buttress.toggled {
+  #sidebar-buttress.toggled-mobile {
     display: block;
   }
 }
