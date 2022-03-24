@@ -108,4 +108,5 @@ app.clientside_callback(
 # app.layout = serve_layout
 
 if __name__ == "__main__":
+    # app.run_server(host="0.0.0.0", debug=True)
     app.run_server(debug=False)

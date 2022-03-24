@@ -1,5 +1,5 @@
 from dash import html
-import dash_table
+from dash import dash_table
 import dash_dangerously_set_inner_html
 import pandas as pd
 from utils.subtitle import get_data_source
