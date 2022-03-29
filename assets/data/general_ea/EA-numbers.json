@@ -499,7 +499,7 @@
       "__type__": "Note",
       "fields": [
         "<p>\nHow many neurons are contained in the brains of all living animals?\n</p>\n",
-        "<p>\nAround [$]3 \\times 10^{23}[/$].\n</p>\n",
+        "<p>\nAround \\(3 \\times 10^{23}\\).\n</p>\n",
         "<p>\nGeorgia Ray's <a href=\"https://docs.google.com/spreadsheets/d/1MbkEkQy9OfUNfb27z0zCIaCMTELTdaSB1g9Ds-2WKSU/edit#gid=1855091310\">estimates</a>.\n</p>\n"
       ],
       "guid": "xSKq!h|2ij",
@@ -741,8 +741,8 @@
       "__type__": "Note",
       "fields": [
         "<p>\nHow many atoms are there in the affectable universe?\n</p>\n",
-        "<p>\nBetween [$]10^{78}[/$] and [$]10^{82}[/$].\n</p>\n",
-        "<p>\n\"it is estimated that the there are between [$]10^{78}[/$] and [$]10^{82}[/$] atoms in the known, observable universe.\" (<a href=\"https://www.universetoday.com/36302/atoms-in-the-universe/\">Villanueva 2009</a>)\n</p>\n"
+        "<p>\nBetween \\(10^{78}\\) and \\(10^{82}\\).\n</p>\n",
+        "<p>\n\"it is estimated that the there are between \\(10^{78}\\) and \\(10^{82}\\) atoms in the known, observable universe.\" (<a href=\"https://www.universetoday.com/36302/atoms-in-the-universe/\">Villanueva 2009</a>)\n</p>\n"
       ],
       "guid": "PEecj7+ef.",
       "note_model_uuid": "ac1aec72-d922-11eb-a6d9-784f4393b0d7",
@@ -873,8 +873,8 @@
       "__type__": "Note",
       "fields": [
         "<p>\nHow much computational power does it take to match the human brain?\n</p>\n",
-        "<p>\nSomething like [$]10^{15}[/$] floating point operations per second.\n</p>\n",
-        "<p>\n\"Overall, I think it more likely than not that  [$]10^{15}[/$] FLOP/s is enough to perform tasks as well as the human brain (given the right software, which may be very hard to create). And I think it unlikely (&lt;10%) that more than [$]10^{21}[/$] FLOP/s is required. But I’m not a neuroscientist, and there’s no consensus in neuroscience (or elsewhere).\" (<a href=\"https://www.openphilanthropy.org/brain-computation-report\">Carlsmith 2020</a>; see the <a href=\"https://www.openphilanthropy.org/brain-computation-report#Appendix5\">appendix</a> for additional estimates)\n</p>\n"
+        "<p>\nSomething like \\(10^{15}\\) floating point operations per second.\n</p>\n",
+        "<p>\n\"Overall, I think it more likely than not that  \\(10^{15}\\) FLOP/s is enough to perform tasks as well as the human brain (given the right software, which may be very hard to create). And I think it unlikely (&lt;10%) that more than \\(10^{21}\\) FLOP/s is required. But I’m not a neuroscientist, and there’s no consensus in neuroscience (or elsewhere).\" (<a href=\"https://www.openphilanthropy.org/brain-computation-report\">Carlsmith 2020</a>; see the <a href=\"https://www.openphilanthropy.org/brain-computation-report#Appendix5\">appendix</a> for additional estimates)\n</p>\n"
       ],
       "guid": "P|dovMnU=*",
       "note_model_uuid": "ac1aec72-d922-11eb-a6d9-784f4393b0d7",
@@ -885,7 +885,7 @@
       "fields": [
         "<p>\nWhat share of total computation did pocket calculators account for in 1986?\n</p>\n",
         "<p>\n41%.\n</p>\n",
-        "<p>\n\"The calculator laid the cornerstone for modern microprocessors and was still the dominant way to compute information in 1986 (41% of [$]3.0 \\times 10^{8}[/$] general-purpose MIPS [million operations per second]).\" (<a href=\"https://doi.org/10.1126/science.1200970\">Hilbert &amp; López 2011</a>)\n</p>\n"
+        "<p>\n\"The calculator laid the cornerstone for modern microprocessors and was still the dominant way to compute information in 1986 (41% of \\(3.0 \\times 10^{8}\\) general-purpose MIPS [million operations per second]).\" (<a href=\"https://doi.org/10.1126/science.1200970\">Hilbert &amp; López 2011</a>)\n</p>\n"
       ],
       "guid": "gsaxif`Eu5",
       "note_model_uuid": "ac1aec72-d922-11eb-a6d9-784f4393b0d7",
@@ -973,7 +973,7 @@
       "fields": [
         "<p>\nHow many galaxies are there in the affectable universe?\n</p>\n",
         "<p>\nAround 7 billion.\n</p>\n",
-        "<p>\n\"The affectable universe contains about 7 billion galaxies with a total of between [$]10^{21}[/$] and [$]10^{23}[/$] stars.\" (<a href=\"https://arxiv.org/abs/2104.01191\">Ord 2021</a>: 22)\n</p>\n"
+        "<p>\n\"The affectable universe contains about 7 billion galaxies with a total of between \\(10^{21}\\) and \\(10^{23}\\) stars.\" (<a href=\"https://arxiv.org/abs/2104.01191\">Ord 2021</a>: 22)\n</p>\n"
       ],
       "guid": "i4Rk]fYyc!",
       "note_model_uuid": "ac1aec72-d922-11eb-a6d9-784f4393b0d7",
@@ -1060,8 +1060,8 @@
       "__type__": "Note",
       "fields": [
         "<p>\nHow many bacteria are there?\n</p>\n",
-        "<p>\nAround [$]5 \\times 10^{30}[/$].\n</p>\n",
-        "<p>\n\"There are approximately [$]5 \\times 10^{30}[/$] bacteria on Earth, forming a biomass which is only exceeded by plants.\" (<a href=\"https://en.wikipedia.org/wiki/Bacteria\">Wikipedia</a>)\n</p>\n"
+        "<p>\nAround \\(5 \\times 10^{30}\\).\n</p>\n",
+        "<p>\n\"There are approximately \\(5 \\times 10^{30}\\) bacteria on Earth, forming a biomass which is only exceeded by plants.\" (<a href=\"https://en.wikipedia.org/wiki/Bacteria\">Wikipedia</a>)\n</p>\n"
       ],
       "guid": "M[Yldav2DO",
       "note_model_uuid": "ac1aec72-d922-11eb-a6d9-784f4393b0d7",
@@ -1072,7 +1072,7 @@
       "fields": [
         "<p>\nFor what fraction of the history of the universe have humans been alive?\n</p>\n",
         "<p>\n0.0022%.\n</p>\n",
-        "<p>\nAs noted elsewhere in this deck, the universe has existed for 13.772 billion years and humanity has existed for 300,000 years. [$] \\frac{300000}{13772000000} = 0.0000217833284926[/$].\n</p>\n"
+        "<p>\nAs noted elsewhere in this deck, the universe has existed for 13.772 billion years and humanity has existed for 300,000 years. \\( \\frac{300000}{13772000000} = 0.0000217833284926\\).\n</p>\n"
       ],
       "guid": "ptEqWp1Fok",
       "note_model_uuid": "ac1aec72-d922-11eb-a6d9-784f4393b0d7",

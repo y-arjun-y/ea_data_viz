@@ -36,9 +36,17 @@ metas = [
 
 main_script = dji.Import(src="../assets/main.js")
 
+
 app = dash.Dash(
     __name__,
     meta_tags=metas,
+    external_scripts=[
+        {
+            "type": "text/javascript",
+            "id": "MathJax-script",
+            "src": "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML",
+        },
+    ],
 )
 
 app.title = "Effective Altruism Data"
