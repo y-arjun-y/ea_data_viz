@@ -3,7 +3,6 @@ import pandas as pd
 from utils.subtitle import get_data_source
 from utils.subtitle import get_instructions
 from utils.plots.line import Line
-from utils.get_data.query_gwwc import get_new_pledges
 
 
 def get_the_pledge_hover(row):

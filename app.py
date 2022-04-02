@@ -11,8 +11,7 @@ from components.sidebar import sidebar
 from components.about import about_box
 from components.body import body
 
-from utils.get_data.refresh_data import refresh_data
-from dash.dependencies import Input, Output, State
+from dash.dependencies import Input, Output
 
 import dash_defer_js_import as dji
 

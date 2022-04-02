@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-import dash
-from dash import dcc
 from dash import html
 import dash_dangerously_set_inner_html
 

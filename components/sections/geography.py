@@ -1,6 +1,5 @@
 from dash import dcc
 from dash import html
-import plotly.graph_objects as go
 import plotly.express as px
 import pandas as pd
 from utils.plots.bar import Bar
@@ -115,7 +114,7 @@ density_map = px.choropleth(
     hover_name="Country",
     locationmode="country names",
     color="log density",
-    title="EAs Per Capita (Darker/Bluer is Higher)",
+    title="EAs Per Capita (Lighter/Bluer is Higher)",
     color_continuous_scale=["#dfe3ee", "#007a8f"],
     hover_data={
         "circle size": False,

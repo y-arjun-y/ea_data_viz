@@ -1,11 +1,5 @@
-import dash
-from dash import dcc
 from dash import html
-import plotly.graph_objects as go
-import plotly.express as px
 import pandas as pd
-import re
-from glob import glob
 from utils.plots.bar import Bar
 from utils.subtitle import get_data_source
 from utils.subtitle import get_instructions

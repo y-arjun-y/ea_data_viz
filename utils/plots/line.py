@@ -1,7 +1,5 @@
-import plotly.express as px
 import plotly.graph_objects as go
 from dash import dcc
-from dash import html
 
 
 class Line(dcc.Graph):

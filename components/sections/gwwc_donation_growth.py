@@ -1,6 +1,5 @@
 import pandas as pd
 from dash import html
-from utils.get_data.query_gwwc import get_donations_by_year
 from utils.subtitle import get_data_source
 from utils.subtitle import get_instructions
 from utils.plots.line import Line

@@ -1,5 +1,3 @@
-import utils.get_data.data_scraping as data_scraping
-import os
 import time
 
 most_recent_refresh = None

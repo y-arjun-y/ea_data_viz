@@ -3,7 +3,6 @@ from dash import html
 from utils.subtitle import get_data_source
 from utils.subtitle import get_instructions
 from utils.plots.bar import Bar
-from utils.get_data.query_gwwc import get_donations_by_org
 
 
 def get_hover(row):

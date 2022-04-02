@@ -1,16 +1,11 @@
-from dash import dcc
 from dash import html
-from dash import dash_table
 
 import pandas as pd
-import numpy as np
 
-from math import log
 from utils.subtitle import get_data_source
 from utils.subtitle import get_instructions
 import json
 
-from utils.plots.bar import Bar
 from utils.plots.line import Line
 from utils.plots.scatter import Scatter
 from utils.plots.wilkinson import Wilkinson

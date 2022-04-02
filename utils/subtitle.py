@@ -1,5 +1,4 @@
 from dash import html
-from dash import dcc
 
 data_source_details = {
     "rethink19": dict(

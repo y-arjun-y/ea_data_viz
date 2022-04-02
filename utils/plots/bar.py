@@ -1,7 +1,4 @@
-import dash
 from dash import dcc
-from dash import html
-import plotly.graph_objects as go
 import plotly.express as px
 
 
@@ -45,10 +42,7 @@ class Bar(dcc.Graph):
                 fixedrange=True,
             ),
             title_x=0.5,
-            font=dict(
-                family="Raleway",
-                size=12,
-            ),
+            font=dict(family="Raleway", size=12),
         )
 
         super().__init__(

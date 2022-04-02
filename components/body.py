@@ -1,4 +1,3 @@
-import dash
 from dash import html
 
 from components.sections.forum import forum_scatter_section

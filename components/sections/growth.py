@@ -1,9 +1,6 @@
-import plotly.express as px
-import plotly.graph_objects as go
 import pandas as pd
 import numpy as np
 import string
-from dash import dcc
 from dash import html
 from utils.subtitle import get_subtitle
 from utils.plots.line import Line
